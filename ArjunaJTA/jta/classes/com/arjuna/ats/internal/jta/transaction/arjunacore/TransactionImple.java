@@ -105,9 +105,8 @@ public class TransactionImple implements javax.transaction.Transaction,
 
 	public boolean equals(Object obj)
 	{
-		if (jtaLogger.logger.isTraceEnabled()) {
-            jtaLogger.logger.trace("TransactionImple.equals");
-        }
+
+    jtaLogger.logger.tracef("TransactionImple.equals");
 
 		if (obj == null)
 			return false;
@@ -320,9 +319,7 @@ public class TransactionImple implements javax.transaction.Transaction,
 
 	public int getStatus() throws javax.transaction.SystemException
 	{
-		if (jtaLogger.logger.isTraceEnabled()) {
-            jtaLogger.logger.trace("TransactionImple.getStatus");
-        }
+    jtaLogger.logger.tracef("TransactionImple.getStatus");
 
 		int status = javax.transaction.Status.STATUS_NO_TRANSACTION;
 		
