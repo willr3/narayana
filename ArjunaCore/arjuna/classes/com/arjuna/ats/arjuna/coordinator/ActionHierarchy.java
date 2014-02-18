@@ -60,9 +60,8 @@ public class ActionHierarchy
 
     public ActionHierarchy (int depth)
     {
-	if (tsLogger.logger.isTraceEnabled()) {
+
         tsLogger.logger.tracef("ActionHierarchy::ActionHierarchy(%d)",depth);
-    }
 
 	hierarchy = null;
 	maxHierarchyDepth = depth;
